@@ -31,8 +31,7 @@
 		// year auto change
 		$("#copyright_year").text(new Date().getFullYear());
 
-		
-		
+	
 		
 		
 		
@@ -43,3 +42,5 @@
 
 // wow js
 new WOW().init();
+
+
