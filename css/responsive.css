@@ -1,0 +1,696 @@
+/*
+====================================
+Medium Screen - Others
+====================================
+*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    .hero_content > h1 {
+        font-size: 50px;
+    }
+    .hero_content > span {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .hero_content > ul li a {
+        width: 220px;
+        min-height: 70px;
+        font-size: 25px;
+        line-height: 155%;
+    }
+    .trustedBy_right ul li {
+        transform: scale(0.7);
+    }
+
+    .whyChoose_content > ul li {
+        padding-left: 20px;
+    }
+
+    .ourService_card > h3 {
+        font-size: 25px;
+    }
+    .ourService_card > span {
+        font-size: 18px;
+    }
+
+    .footer_address > ul li a {
+        font-size: 17px;
+    }
+    .whyChoose_thumb > img {
+        max-width: 400px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/*
+====================================
+Small Screen - Tablate
+====================================
+*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .header_content button.getTouch_btn {
+        margin-left: auto;
+        margin-right: 15px;
+    }
+    .header_offcanvas .offcanvas-header {
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+    .header_offcanvas .offcanvas-header > img {
+        width: 40px;
+    }
+    .header_offcanvas {
+        max-width: 280px;
+    }
+    .header_offcanvas .header_content ul {
+        width: 100%;
+    }
+    .footer_area {
+        padding-top: 50px;
+    }
+    .footer_logo_content {
+        margin-bottom: 20px;
+    }
+
+
+    .whyChoose_thumb > img {
+        width: 100%;
+        max-width: 350px;
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+
+    .hero_thumb img {
+        width: 100%;
+        max-width: 350px;
+    }
+    .hero_area {
+        padding-top: 150px;
+        padding-bottom: 170px;
+    }
+    .heroBrand_area {
+        margin-top: -100px;
+    }
+    .hero_content > h1 {
+        text-align: left;
+        font-size: 50px;
+        margin-top: 20px;
+        margin-bottom: 18px;
+    }
+    .hero_content > h1 br {
+        display: none;
+    }
+    .hero_content > span {
+        color: #FFF;
+        text-align: left;
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .hero_content > ul {
+        justify-content: flex-start;
+    }
+    .serviceCol3_wrapper {
+        flex-wrap: wrap;
+    }
+    .ourService_card.w_45.one {
+        width: 100%;
+    }
+    .ourService_card.w_45.two {
+        width: 85%
+    }
+    .serviceCol3_wrapper .more_btn.w_15 {
+        width: 12%;
+    }
+    .faq_area {
+        margin-top: 120px;
+    }
+    .customerSay_area {
+        margin-top: 120px;
+    }
+    .footer_subscription_content {
+        border-radius: 50px;
+        background: linear-gradient(77deg, #0B211E 1.77%, #56A77A 98.23%);
+        padding: 70px 50px;
+    }
+    .footer_subscription_content .robo_overlay {
+        width: 100%;
+        max-width: 300px;
+        position: absolute;
+        top: -165px;
+        left: -124px;
+    }
+
+    .our_service_area img.robo_overlay1 {
+        width: 300px;
+        position: absolute;
+        top: -50%;
+        left: -15%;
+    }
+    .whyChoose_area {
+        margin-top: 100px;
+    }
+    .whyChoose_content > ul li {
+        max-width: 100%;
+    }
+
+
+}
+
+/*
+====================================
+Small Screen - Mobile
+====================================
+*/
+@media screen and (min-width: 576px) and (max-width: 767px) {	
+
+
+    .header_content button.getTouch_btn {
+        margin-left: auto;
+        margin-right: 15px;
+    }
+    .header_offcanvas .offcanvas-header {
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+    .header_offcanvas .offcanvas-header > img {
+        width: 40px;
+    }
+    .header_offcanvas {
+        max-width: 280px;
+    }
+    .header_offcanvas .header_content ul {
+        width: 100%;
+    }
+    .footer_area {
+        padding-top: 50px;
+    }
+    .footer_logo_content {
+        margin-bottom: 20px;
+    }
+
+
+
+    .header_content button.getTouch_btn {
+        margin-left: auto;
+        margin-right: 15px;
+    }
+    .header_offcanvas .offcanvas-header {
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+    .header_offcanvas .offcanvas-header > img {
+        width: 40px;
+    }
+    .header_offcanvas {
+        max-width: 280px;
+    }
+    .header_offcanvas .header_content ul {
+        width: 100%;
+    }
+    .footer_area {
+        padding-top: 50px;
+    }
+    .footer_logo_content {
+        margin-bottom: 20px;
+    }
+
+
+    .whyChoose_thumb > img {
+        width: 100%;
+        max-width: 350px;
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+
+    .hero_thumb img {
+        width: 100%;
+        max-width: 350px;
+    }
+    .hero_area {
+        padding-top: 150px;
+        padding-bottom: 170px;
+    }
+    .heroBrand_area {
+        margin-top: -100px;
+    }
+    .hero_content > h1 {
+        text-align: left;
+        font-size: 50px;
+        margin-top: 20px;
+        margin-bottom: 18px;
+    }
+    .hero_content > h1 br {
+        display: none;
+    }
+    .hero_content > span {
+        color: #FFF;
+        text-align: left;
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .hero_content > ul {
+        justify-content: flex-start;
+    }
+    .serviceCol3_wrapper {
+        flex-wrap: wrap;
+    }
+    .ourService_card.w_45.one {
+        width: 100%;
+    }
+    .ourService_card.w_45.two {
+        width: 80%
+    }
+    .serviceCol3_wrapper .more_btn.w_15 {
+        width: 17%;
+    }
+    .faq_area {
+        margin-top: 120px;
+    }
+    .customerSay_area {
+        margin-top: 120px;
+    }
+    .footer_subscription_content {
+        border-radius: 30px;
+        background: linear-gradient(77deg, #0B211E 1.77%, #56A77A 98.23%);
+        padding: 70px 50px;
+    }
+    .footer_subscription_content .robo_overlay {
+        width: 100%;
+        max-width: 260px;
+        position: absolute;
+        top: -165px;
+        left: -124px;
+    }
+
+    .our_service_area img.robo_overlay1 {
+        width: 300px;
+        position: absolute;
+        top: -50%;
+        left: -20%;
+    }
+    .whyChoose_area {
+        margin-top: 100px;
+    }
+    .whyChoose_content > ul li {
+        max-width: 100%;
+    }
+
+    .faq_header h2 {
+        font-size: 30px;
+    }
+    .customerSay_header > h2 {
+        font-size: 30px;
+    }
+    .ourService_card > h3 {
+        font-size: 22px;
+    }
+    .ourService_card {
+        min-height: auto;
+    }
+    .footer_subscription_content > h2 {
+        font-size: 30px;
+    }
+    .footer_subscription_content > p {
+        font-size: 18px;
+    }
+    .footer_subscription_content > form input {
+        width: 100%;
+        min-height: 70px;
+        display: block;
+        border-radius: 15px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 120%;
+        padding: 25px 20px;
+    }
+    .footer_subscription_content > form button {
+        width: 130px;
+        min-height: 55px;
+        border-radius: 8px;
+        font-size: 18px;
+        line-height: 120%;
+        position: absolute;
+        top: 50%;
+        right: 8px;
+        transform: translateY(-50%);
+    }
+
+    .footer_subscription_area {
+        margin-top: 100px;
+    }
+
+
+
+    .hero_content > ul li a {
+        width: 200px;
+        min-height: 65px;
+        color: #FFF;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+/*
+====================================
+Xtra Small Screen - Small Mobile
+====================================
+*/
+@media screen and (max-width: 575px) {
+
+    .header_content button.getTouch_btn {
+        margin-left: auto;
+        margin-right: 15px;
+    }
+    .header_offcanvas .offcanvas-header {
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+    .header_offcanvas .offcanvas-header > img {
+        width: 40px;
+    }
+    .header_offcanvas {
+        max-width: 280px;
+    }
+    .header_offcanvas .header_content ul {
+        width: 100%;
+    }
+    .footer_area {
+        padding-top: 50px;
+    }
+    .footer_logo_content {
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+    .header_content button.getTouch_btn {
+        margin-left: auto;
+        margin-right: 15px;
+    }
+    .header_offcanvas .offcanvas-header {
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+    .header_offcanvas .offcanvas-header > img {
+        width: 40px;
+    }
+    .header_offcanvas {
+        max-width: 280px;
+    }
+    .header_offcanvas .header_content ul {
+        width: 100%;
+    }
+    .footer_area {
+        padding-top: 50px;
+    }
+    .footer_logo_content {
+        margin-bottom: 20px;
+    }
+
+
+
+    .header_content button.getTouch_btn {
+        margin-left: auto;
+        margin-right: 15px;
+    }
+    .header_offcanvas .offcanvas-header {
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .header_offcanvas .offcanvas-header > img {
+        width: 40px;
+    }
+    .header_offcanvas {
+        max-width: 280px;
+    }
+    .header_offcanvas .header_content ul {
+        width: 100%;
+    }
+    .footer_area {
+        padding-top: 50px;
+    }
+    .footer_logo_content {
+        margin-bottom: 20px;
+    }
+
+
+    .whyChoose_thumb > img {
+        width: 100%;
+        max-width: 220px;
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+
+    .hero_thumb img {
+        width: 100%;
+        max-width: 220px;
+    }
+    .hero_area {
+        padding-top: 150px;
+        padding-bottom: 170px;
+    }
+    .heroBrand_area {
+        margin-top: -100px;
+    }
+    .hero_content > h1 {
+        text-align: left;
+        font-size: 40px;
+        margin-top: 20px;
+        margin-bottom: 18px;
+    }
+    .hero_content > h1 br {
+        display: none;
+    }
+    .hero_content > span {
+        color: #FFF;
+        text-align: left;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .hero_content > ul {
+        justify-content: flex-start;
+    }
+    .serviceCol3_wrapper {
+        flex-wrap: wrap;
+    }
+    .ourService_card.w_45.one {
+        width: 100%;
+    }
+    .ourService_card.w_45.two {
+        width: 80%
+    }
+    .serviceCol3_wrapper .more_btn.w_15 {
+        width: 17%;
+    }
+    .faq_area {
+        margin-top: 120px;
+    }
+    .customerSay_area {
+        margin-top: 80px;
+    }
+    .footer_subscription_content {
+        border-radius: 30px;
+        background: linear-gradient(77deg, #0B211E 1.77%, #56A77A 98.23%);
+        padding: 50px 15px;
+        padding-bottom: 20px;
+    }
+    .footer_subscription_content .robo_overlay {
+        width: 100%;
+        max-width: 260px;
+        position: absolute;
+        top: -165px;
+        left: -124px;
+    }
+
+    .our_service_area img.robo_overlay1 {
+        width: 160px;
+        position: absolute;
+        top: -50%;
+        left: -20%;
+    }
+    .whyChoose_area {
+        margin-top: 100px;
+    }
+    .whyChoose_content > ul li {
+        max-width: 100%;
+        font-size: 20px;
+        padding: 10px 5px;
+        padding-left: 15px;
+        height: 70px;
+    }
+
+    .faq_header h2 {
+        font-size: 22px;
+    }
+    .customerSay_header > h2 {
+        font-size: 25px;
+    }
+    .ourService_card > h3 {
+        font-size: 22px;
+    }
+    .ourService_card {
+        min-height: auto;
+    }
+    .footer_subscription_content > h2 {
+        font-size: 25px;
+    }
+    .footer_subscription_content > p {
+        font-size: 18px;
+    }
+    .footer_subscription_content > form input {
+        width: 100%;
+        min-height: 55px;
+        display: block;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 120%;
+        padding: 10px 20px;
+    }
+    .footer_subscription_content > form button {
+        width: 130px;
+        min-height: 55px;
+        border-radius: 8px;
+        font-size: 18px;
+        line-height: 120%;
+        position: absolute;
+        top: 50%;
+        right: 8px;
+        transform: translateY(0);
+        position: static;
+        margin-top: 10px;
+    }
+
+    .footer_subscription_area {
+        margin-top: 100px;
+    }
+
+
+
+    .hero_content > ul li a {
+        width: 140px;
+        min-height: 50px;
+        color: #FFF;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .heroBrand_row {
+        border-radius: 20px;
+        border: 1px solid #5BB674;
+        background: rgba(255, 255, 255, 0.30);
+        backdrop-filter: blur(50px);
+        padding: 20px 15px;
+    }
+    .heroBrand_left h4 {
+        font-size: 25px;
+        margin-bottom: 2px;
+    }
+    .heroBrand_left span {
+        font-size: 14px;
+        line-height: 150%;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .trustedBy_right ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 3 items per row */
+        gap: 10px; /* Adjust spacing between items */
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    .trustedBy_right ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0.7);
+    }
+    
+    .trustedBy_right ul li a img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .ourService_card.w_45.two {
+        width: 100%;
+    }
+    .serviceCol3_wrapper .more_btn.w_15 {
+        width: 50%;
+        height: 80px;
+        margin: 0 auto;
+    }
+    .faq_header span {
+        font-size: 16px;
+    }
+    .accordion_header_ris {
+        font-size: 14px;
+    }
+
+    .footer_logo_content a.logo img {
+        max-width: 150px;
+    }
+
+    .header_content {
+        width: 100%;
+        max-width: 935px;
+        background-color: #FFFFFF;
+        border-radius: 15px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background: #FFF;
+        backdrop-filter: blur(100px);
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+    .header_logo a img {
+        width: 100%;
+        max-width: 38px;
+    }
+
+
+
+    .customerSay_header > span {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+
+
+
+
+
+}
