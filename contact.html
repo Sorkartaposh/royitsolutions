@@ -125,30 +125,32 @@
 					</div>
 					<div class="col-lg-7 order-1 order-lg-2">
 						<div class="contactForm_right">
-							<form action="">
+							<form action="https://api.web3forms.com/submit" method="post">
+								<input type="hidden" name="access_key" value="7fbb4df6-a205-43f3-ae6c-42e48589cfa0">
 								<div class="form_input">
 									<label>Full Name</label>
-									<input type="text" placeholder="Your name here...">
+									<input type="text" name="name" placeholder="Your name here..." required>
 								</div>
 								<div class="form_input">
 									<label>Email Address</label>
-									<input type="email" placeholder="Your email address..." required>
+									<input type="email" name="email" placeholder="Your email address..." required>
 								</div>
 								<div class="form_input">
 									<label>Phone Number</label>
-									<input type="tel" placeholder="Your phone number...">
+									<input type="tel" name="number" placeholder="Your phone number...">
 								</div>
 								<div class="form_input">
 									<label>Select Services</label>
-									<select>
-										<option value="0">Web Development</option>
-										<option value="1">Data Entry</option>
-										<option value="2">UI/Ux Design</option>
+									<select name="select_service">
+										<option value="" disabled selected>Select Services</option>
+										<option value="Web Development">Web Development</option>
+										<option value="Data Entry">Data Entry</option>
+										<option value="UI/Ux Design">UI/Ux Design</option>
 									</select>
 								</div>
 								<div class="form_input">
 									<label>Write message</label>
-									<textarea placeholder="write your massege here.."></textarea>
+									<textarea name="message" placeholder="write your massege here.."></textarea>
 								</div>
 								<div class="form_btn">
 									<button type="submit">Send Massege</button>
