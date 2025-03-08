@@ -1197,6 +1197,15 @@ whoWeAre START HERE
     display: block;
     border-radius: 20px;
 }
+.whoWeAre_right > p {
+    color: #000;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 155%;
+    margin-bottom: 15px;
+}
+
+/*
 .whoWeAre_right > button {
     width: 100%;
     min-height: 95px;
@@ -1216,7 +1225,7 @@ whoWeAre START HERE
 .whoWeAre_right > button:hover {
     color: #fff;
     background-color: #000;
-}
+} */
 
 /*
 ========================
@@ -1394,3 +1403,188 @@ TEAM MEMBER START HERE
 .teamCard_btn {
     margin-bottom: 15px;
 }
+
+/*
+========================
+contact hero START HERE 
+========================
+*/
+.hero_area.contact {
+    background: url(images/ctHero_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    min-height: 865px;
+}
+.hero_area.contact .hero_content h1 {
+    color: #000;
+    font-size: 32px;
+}
+.hero_area.contact .hero_content span {
+    color: #515151;
+    text-align: center;
+    font-size: 24px;
+}
+
+
+/*
+========================
+contact Form START HERE 
+========================
+*/
+.contactForm_wrapper {
+    margin-top: -350px;
+}
+.contactForm_row {
+    border-radius: 40px;
+    border: 1px solid #DDD;
+    background: #FAFAFA;
+    box-shadow: 0px 0px 20px -6px rgba(0, 0, 0, 0.35);
+}
+.contactForm_wrapper .contactForm_left {
+    height: 100%;
+    border-radius: 40px;
+    background: #5AB281;
+    padding-top: 195px;
+    padding-bottom: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.contactForm_wrapper .contactForm_left > h3 {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 116%;
+    padding-left: 100px;
+    margin-bottom: 20px;
+}
+.contactForm_wrapper .contactForm_left ul.contact_list {
+    padding-left: 100px;
+}
+.contactForm_wrapper .contactForm_left ul.contact_list li a {
+    color: #FFF;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 116%;
+}
+.contactForm_wrapper .contactForm_left ul.contact_list li {
+    margin-bottom: 30px;
+}
+.contactForm_wrapper .contactForm_left > hr {
+    color: #92D6B0;
+    height: 2px;
+    opacity: 1;
+    width: 100%;
+    max-width: 390px;
+    margin: 0 auto;
+    margin-top: 65px;
+    margin-bottom: 74px;
+}
+.contactForm_wrapper .contactForm_left > h4 {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 116%;
+    padding-left: 100px;
+    margin-bottom: 20px;
+}
+.contactForm_wrapper .contactForm_left > ul.social_list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 100px;
+}
+.contactForm_wrapper .contactForm_left > ul li a {
+    font-size: 40px;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+.contactForm_right .form_input label {
+    color: #000;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 116%;
+    display: block;
+    margin-bottom: 7px;
+}
+.contactForm_right .form_input input {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 116%;
+    width: 100%;
+    min-height: 80px;
+    border-radius: 10px;
+    border: 1px solid #E2E2E2;
+    background: #FFF;
+    padding: 0 20px;
+    transition: 0.3s;
+}
+.contactForm_right .form_input input:focus {
+    border-color: #5AB281;
+}
+.contactForm_right .form_input {
+    margin-bottom: 25px;
+}
+.contactForm_right {
+    padding-top: 55px;
+    padding-left: 55px;
+    padding-right: 80px;
+    padding-bottom: 34px;
+}
+.contactForm_right .form_input select {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 116%;
+    width: 100%;
+    min-height: 80px;
+    border-radius: 10px;
+    border: 1px solid #E2E2E2;
+    background: #FFF;
+    padding: 0 20px;
+    transition: 0.3s;
+}
+.contactForm_right .form_input select:focus {
+    border-color: #5AB281;
+}
+.contactForm_right .form_input textarea {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 116%;
+    width: 100%;
+    min-height: 160px;
+    border-radius: 10px;
+    border: 1px solid #E2E2E2;
+    background: #FFF;
+    padding: 0 20px;
+    transition: 0.3s;
+    padding-top: 25px;
+    resize: none;
+}
+.contactForm_right .form_input textarea:focus {
+    border-color: #5AB281;
+}
+.contactForm_right .form_btn button {
+    width: 100%;
+    max-width: 185px;
+    min-height: 60px;
+    border: 0;
+    border-radius: 10px;
+    background: #5AB281;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 116.97%; 
+    transition: 0.3s;
+    display: block;
+    margin-left: auto;
+}
+.contactForm_right .form_btn button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+

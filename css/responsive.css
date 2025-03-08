@@ -42,7 +42,15 @@ Medium Screen - Others
 
 
 
-
+    .contactForm_wrapper .contactForm_left > h3,
+    .contactForm_wrapper .contactForm_left ul.contact_list,
+    .contactForm_wrapper .contactForm_left > h4 {
+        padding-left: 50px;
+    }
+    .contactForm_wrapper .contactForm_left > ul.social_list {
+        margin-left: 50px;
+    }
+ 
 
 
 
@@ -189,11 +197,38 @@ Small Screen - Tablate
 
 
 
-
-
-
-
-
+    .contactForm_wrapper .contactForm_left {
+        height: 100%;
+        border-radius: 40px;
+        background: #5AB281;
+        padding: 50px 30px;
+    }
+    .contactForm_wrapper .contactForm_left > h3 {
+        padding-left: 0;
+    }
+    .contactForm_wrapper .contactForm_left ul.contact_list {
+        padding-left: 0;
+    }
+    .contactForm_wrapper .contactForm_left > hr {
+        color: #92D6B0;
+        height: 2px;
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .contactForm_wrapper .contactForm_left > h4 {
+        padding-left: 0;
+    }
+    .contactForm_wrapper .contactForm_left > ul.social_list {
+        margin-left: 0;
+    }
+    .contactForm_right {
+        padding: 50px 20px;
+    }
+    .contactForm_row {
+        border-radius: 20px;
+    }
 
 
 
@@ -455,6 +490,40 @@ Small Screen - Mobile
     }
 
 
+
+
+    .contactForm_wrapper .contactForm_left {
+        height: 100%;
+        border-radius: 20px;
+        background: #5AB281;
+        padding: 50px 30px;
+    }
+    .contactForm_wrapper .contactForm_left > h3 {
+        padding-left: 0;
+    }
+    .contactForm_wrapper .contactForm_left ul.contact_list {
+        padding-left: 0;
+    }
+    .contactForm_wrapper .contactForm_left > hr {
+        color: #92D6B0;
+        height: 2px;
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .contactForm_wrapper .contactForm_left > h4 {
+        padding-left: 0;
+    }
+    .contactForm_wrapper .contactForm_left > ul.social_list {
+        margin-left: 0;
+    }
+    .contactForm_right {
+        padding: 50px 20px;
+    }
+    .contactForm_row {
+        border-radius: 20px;
+    }
 
 
 
@@ -916,9 +985,99 @@ Xtra Small Screen - Small Mobile
     .whyUs_middle > ul {
         margin-bottom: 10px;
     }
+    .whoWeAre_right > p {
+        font-size: 16px;
+    }
 
 
 
+
+    .contactForm_wrapper .contactForm_left {
+        height: 100%;
+        border-radius: 20px;
+        background: #5AB281;
+        padding: 50px 30px;
+    }
+    .contactForm_wrapper .contactForm_left > h3 {
+        padding-left: 0;
+        font-size: 20px;
+    }
+    .contactForm_wrapper .contactForm_left ul.contact_list {
+        padding-left: 0;
+    }
+    .contactForm_wrapper .contactForm_left > hr {
+        color: #92D6B0;
+        height: 2px;
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .contactForm_wrapper .contactForm_left > h4 {
+        padding-left: 0;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .contactForm_wrapper .contactForm_left > ul.social_list {
+        margin-left: 0;
+    }
+    .contactForm_right {
+        padding: 30px 20px;
+    }
+    .contactForm_row {
+        border-radius: 20px;
+    }
+    .contactForm_right .form_input input,
+    .contactForm_right .form_input select {
+        min-height: 55px;
+        padding-left: 10px;
+        font-size: 18px;
+    }
+    .contactForm_right .form_input label {
+        font-size: 16px;
+    }
+    .hero_area.contact .hero_content > span {
+        font-size: 16px;
+    }
+    .contactForm_wrapper {
+        margin-top: -450px;
+    }
+    .contactForm_right .form_btn button {
+        max-width: 150px;
+        min-height: 50px;
+        font-size: 18px;
+    }
+    .contactForm_wrapper .contactForm_left ul.contact_list li a {
+        font-size: 17px;
+    }
+    .contactForm_wrapper .contactForm_left > ul li a {
+        font-size: 30px;
+    }
+    .contactForm_wrapper .contactForm_left ul.contact_list li {
+        margin-bottom: 15px;
+    }
+    .contactForm_right .form_input textarea {
+        padding: 10px;
+        font-size: 16px;
+    }
+    .contactForm_right .form_input select {
+        font-size: 16px;
+    }
+    .footer_logo_content > p {
+        font-size: 16px;
+    }
+    .footer_logo_content > ul li a {
+        font-size: 30px;
+    }
+    .footer_link > h4 {
+        font-size: 20px;
+    }
+    .footer_link > ul li a {
+        font-size: 16px;
+    }
+    .footer_address > ul li a {
+        font-size: 16px;
+    }
 
 
 }
