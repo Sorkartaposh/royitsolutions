@@ -285,7 +285,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['name'], $_POST['email'
 
         // Email Headers
         $mail->setFrom('developertaposh@gmail.com', 'Roy IT Solutions');
-        $mail->addAddress('taposhsorkar88@gmail.com', 'Website Inquiry');
+        $mail->addAddress('robertfcoon@gmail.com');
 
         // Email Content
         $mail->isHTML(true);
@@ -297,7 +297,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['name'], $_POST['email'
                           <strong>Message:</strong> $message";
 
         $mail->send();
-        echo '<span id="emailSend_msg">Message has been sent successfully!</span>';
+        echo '<h6 id="emailSend_msg"><div></div><span>Message has been sent successfully!</span> <i class="fa-solid fa-xmark"></i></h6>';
     } catch (Exception $e) {
         echo "Message could not be sent. Error: " . $mail->ErrorInfo;
     }

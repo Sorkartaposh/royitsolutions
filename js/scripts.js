@@ -32,7 +32,9 @@
 		$("#copyright_year").text(new Date().getFullYear());
 
 	
-		
+		$("#emailSend_msg i").click(function() {
+			$("#emailSend_msg").hide();
+		});
 		
 		
 		

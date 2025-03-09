@@ -393,7 +393,7 @@
 								<li><a href="#"><i class="fa-solid fa-phone"></i> +123 456 7890</a></li>
 								<li><a href="#"><i class="fa-solid fa-location-dot"></i> 123 Sherpur , Tech City</a></li>
 							</ul>
-							<form action="">
+							<form action="./contact.php" method="post">
 								<input type="email" placeholder="Email address..">
 								<button type="button">Submit</button>
 							</form>

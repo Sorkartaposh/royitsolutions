@@ -1029,12 +1029,13 @@ Xtra Small Screen - Small Mobile
     }
     .contactForm_right .form_input input,
     .contactForm_right .form_input select {
-        min-height: 55px;
+        min-height: 45px;
         padding-left: 10px;
-        font-size: 18px;
+        font-size: 16px;
     }
     .contactForm_right .form_input label {
-        font-size: 16px;
+        font-size: 15px;
+        margin-bottom: 5px;
     }
     .hero_area.contact .hero_content > span {
         font-size: 16px;
@@ -1043,9 +1044,9 @@ Xtra Small Screen - Small Mobile
         margin-top: -450px;
     }
     .contactForm_right .form_btn button {
-        max-width: 150px;
-        min-height: 50px;
-        font-size: 18px;
+        max-width: 140px;
+        min-height: 45px;
+        font-size: 16px;
     }
     .contactForm_wrapper .contactForm_left ul.contact_list li a {
         font-size: 17px;
@@ -1058,10 +1059,11 @@ Xtra Small Screen - Small Mobile
     }
     .contactForm_right .form_input textarea {
         padding: 10px;
-        font-size: 16px;
+        font-size: 15px;
+        min-height: 140px;
     }
     .contactForm_right .form_input select {
-        font-size: 16px;
+        font-size: 15px;
     }
     .footer_logo_content > p {
         font-size: 16px;
@@ -1078,6 +1080,17 @@ Xtra Small Screen - Small Mobile
     .footer_address > ul li a {
         font-size: 16px;
     }
+
+
+    #emailSend_msg {
+        font-size: 16px;
+        padding: 15px 12px;
+    }
+    .contactForm_right .form_input {
+        margin-bottom: 15px;
+    }
+
+
 
 
 }
