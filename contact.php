@@ -125,8 +125,7 @@
 					</div>
 					<div class="col-lg-7 order-1 order-lg-2">
 						<div class="contactForm_right">
-							<form action="https://api.web3forms.com/submit" method="post">
-								<input type="hidden" name="access_key" value="7fbb4df6-a205-43f3-ae6c-42e48589cfa0">
+							<form action="" method="post">
 								<div class="form_input">
 									<label>Full Name</label>
 									<input type="text" name="name" placeholder="Your name here..." required>
@@ -149,13 +148,14 @@
 									</select>
 								</div>
 								<div class="form_input">
-									<label>Write message</label>
-									<textarea name="message" placeholder="write your massege here.."></textarea>
+									<label>Write Message</label>
+									<textarea name="message" placeholder="Write your message here..."></textarea>
 								</div>
 								<div class="form_btn">
-									<button type="submit">Send Massege</button>
+									<button type="submit" name="send">Send Message</button>
 								</div>
 							</form>
+							
 						</div>
 					</div>
 				</div>
@@ -249,3 +249,59 @@
 		
 	</body>
 </html>
+
+<?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
+
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['name'], $_POST['email'], $_POST['number'], $_POST['message'], $_POST['select_service'])) {
+    
+    $name = htmlspecialchars(strip_tags($_POST['name']));
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+    $number = htmlspecialchars(strip_tags($_POST['number']));
+    $message = htmlspecialchars(strip_tags($_POST['message']));
+    $select_service = htmlspecialchars(strip_tags($_POST['select_service'])); // ✅ Capture selected service
+
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        die("Invalid email address!");
+    }
+
+    require './PHPMailer/Exception.php';
+    require './PHPMailer/PHPMailer.php';
+    require './PHPMailer/SMTP.php';
+
+    $mail = new PHPMailer(true);
+
+    try {
+        // SMTP Configuration
+        $mail->isSMTP();
+        $mail->Host       = 'smtp.gmail.com';
+        $mail->SMTPAuth   = true;
+        $mail->Username   = 'developertaposh@gmail.com'; // Your email
+        $mail->Password   = 'vfiovczltbyuacvh'; // Update with a new Gmail App Password
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+        $mail->Port       = 465;
+
+        // Email Headers
+        $mail->setFrom('developertaposh@gmail.com', 'Roy IT Solutions');
+        $mail->addAddress('taposhsorkar88@gmail.com', 'Website Inquiry');
+
+        // Email Content
+        $mail->isHTML(true);
+        $mail->Subject = 'Contact Form Submission';
+        $mail->Body    = "<strong>Name:</strong> $name <br>
+                          <strong>Email:</strong> $email <br>
+                          <strong>Number:</strong> $number <br>
+                          <strong>Selected Service:</strong> $select_service <br> 
+                          <strong>Message:</strong> $message";
+
+        $mail->send();
+        echo '<span id="emailSend_msg">Message has been sent successfully!</span>';
+    } catch (Exception $e) {
+        echo "Message could not be sent. Error: " . $mail->ErrorInfo;
+    }
+} else {
+    echo "Please fill in all required fields.";
+}
+?>

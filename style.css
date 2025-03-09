@@ -1587,4 +1587,15 @@ contact Form START HERE
     color: #fff;
 }
 
-
+#emailSend_msg {
+    background-color: rgb(4, 201, 4);
+    display: block;
+    padding: 20px 5px;
+    text-align: center;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
