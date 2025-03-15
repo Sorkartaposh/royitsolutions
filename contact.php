@@ -250,6 +250,8 @@
 	</body>
 </html>
 
+
+
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -302,6 +304,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['name'], $_POST['email'
         echo "Message could not be sent. Error: " . $mail->ErrorInfo;
     }
 } else {
-    echo "Please fill in all required fields.";
+    echo "";
 }
 ?>

@@ -847,6 +847,7 @@ CUSTOMER SAY START HERE
 .customerSay_card_wrapper .swiper-scrollbar-drag {
     border-radius: 9.6px;
     background: #56A77A;
+    cursor: grabbing;
 }
 
 
@@ -893,7 +894,7 @@ CUSTOMER SAY START HERE
     background: #D8FFEC;
     outline: none;
     border: 0;
-    color: #9180A3;
+    color: #000;
     font-size: 28px;
     font-weight: 400;
     line-height: 134.588%;
@@ -1019,7 +1020,7 @@ footer START HERE
     line-height: 116.97%;
 }
 .footer_address > form button {
-    width: 100px;
+    width: 75px;
     height: 40px;
     border-radius: 5.541px;
     background: #000;
@@ -1338,70 +1339,120 @@ team member START HERE
     width: 100%;
     max-width: 628px;
 }
-
-
-/*
-========================
-TEAM MEMBER START HERE 
-========================
-*/
-.teamISoTop_row {
-    margin-top: 70px;
+.teamMemberIsoTop_wrapper .grid {
+    display: flex;
 }
-.teamISoTop_btn button {
-    color: #3D3D3D;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 96%;
-    border-radius: 5px;
-    background: #D6D6D6;
-    border: 0;
+.teamMemberIsoTop_wrapper .element-item {
+    border: 10px solid #fff;
+    width: 33.33%;
+}
+
+.teamMember_card {
+    border-radius: 25px;
+    border: 1px solid #DADADA;
+    background: #FAFAFA;
+    padding: 8px;
+}
+.teamMember_card .thumb > span {
     display: inline-block;
-    padding: 10px 24px;
-} 
-
-.teamCard_row {
-    margin-top: 70px;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 155%;
+    border-radius: 14px;
+    padding: 10px;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
 }
-.teamCard_content {
-    width: 33.33%; 
+.teamMember_card.color1 .thumb > span {
+    background: rgba(255, 234, 158, .5);
+    color: #FFD84D;
 }
-.teamCard_wrapper .teamCard_btn button {
-    color: #3D3D3D;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 96%;
-    padding: 10px 24px;
-    border-radius: 5px;
-    background: #D6D6D6;
-    border: 0;
+.teamMember_card.color3 .thumb > span {
+    color: #FFF;
+    background: rgba(158, 71, 166, 0.55);
+}
+.teamMember_card.color2 .thumb > span {
+    color: #4DFFFF;
+    background: rgba(71, 149, 166, 0.55);
+}
+.teamMember_card .thumb {
+    overflow: hidden;
+    border-radius: 20px;
+}
+.teamMember_card:hover .thumb > img {
+    transform: scale(1.1);
+}
+.teamMember_card .thumb > img {
     transition: 0.3s;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: top center;
 }
-.teamCard_wrapper .teamCard_btn button:hover,
-.teamCard_wrapper .teamCard_btn button.is-checked {
-    background-color: #000;
-    color: #fff;
+.teamMember_card .card_body {
+    padding: 15px 10px;
 }
-
-.button {
-    display: inline-block;
-    background: #222;
-    text-transform: uppercase;
-    color: #fff;
-    padding: 8px 12px;
+.teamMember_card .card_body > h4 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: 10px;
+}
+.teamMember_card .card_body > p {
+    color: #7A7A7A;
     font-size: 16px;
-    border: none;
-    margin: 3px 0px;
-  }
-.teamCard_wrapper .teamCard_btn {
+    font-weight: 400;
+    line-height: 135%; /* 21.6px */
+}
+.teamMember_card .card_body > a {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 135%;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    min-height: 50px;
+    border-radius: 10px;
+    background: #56A77A;
     gap: 8px;
-    flex-wrap: wrap;
+    transition: 0.3s;
+    margin-top: 15px;
 }
-.teamCard_btn {
-    margin-bottom: 15px;
+.teamMember_card .card_body > a:hover {
+    background: #000;
+    color: #fff;
+
+}
+.teamMember_card .card_body > a i {
+    font-size: 16px;
+}
+.isoTopBtn_wrapper > button {
+    display: inline-block;
+    padding: 10px 24px;
+    border: 0;
+    color: #3D3D3D;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 96%;
+    border-radius: 5px;
+    background: #D6D6D6;
+
+}
+.isoTopBtn_wrapper > button.is-checked,
+.isoTopBtn_wrapper > button:hover {
+    background-color: #000;
+    color: #fff;
+}
+.isoTopBtn_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
 }
 
 /*
@@ -1607,4 +1658,319 @@ contact Form START HERE
     font-size: 25px;
     display: block;
     cursor: pointer;
+}
+
+
+/************************* service page start here *************************/
+
+.hero_area.services {
+    padding-top: 170px;
+    background: linear-gradient(90deg, #5AB281 0%, #1A3727 100%);
+}
+
+.services_hero_content > img {
+    width: 100%;
+    max-width: 735px;
+}
+.services_hero_content .services_hero_inner {
+    width: 100%;
+    max-width: 410px;
+}
+.services_hero_content .services_hero_inner h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 116%;
+    margin-bottom: 15px;
+}
+.services_hero_content .services_hero_inner p {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 155%;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.services_hero_content .services_hero_inner ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 116.97%;
+    width: 175px;
+    min-height: 50px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.services_hero_content .services_hero_inner ul li:first-child a {
+    color: #000;
+    background: #FFF;
+}
+.services_hero_content .services_hero_inner ul li:first-child a:hover {
+    background: #000;
+    color: #FFF;
+
+}
+.services_hero_content .services_hero_inner ul li:last-child a {
+    background: rgba(255, 255, 255, 0.20);
+    color: #FFF;
+}
+.services_hero_content .services_hero_inner ul li:last-child a:hover {
+    color: #000;
+    background: #FFF;
+}
+.services_hero_content .services_hero_inner ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.services_hero_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+
+/*
+========================
+expert team START HERE 
+========================
+*/
+.expertService_area {
+    margin-top: 90px;
+}
+.expertService_header h2 {
+    color: #000;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 116.97%;
+    margin-bottom: 15px;
+}
+.expertService_header p {
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 155%;
+    width: 100%;
+    max-width: 385px;
+    margin: 0 auto;
+}
+
+
+
+.expertService_tabBtn ul {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.expertService_tabBtn ul li a {
+    color: #3D3D3D;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 96%;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    background: #D6D6D6;
+    border: 0;
+    transition: 0.3s;
+}
+.expertService_tabBtn ul li a:hover,
+.expertService_tabBtn ul li a.active {
+    border-radius: 5px;
+    background: #000;
+    color: #FFF;
+}
+
+.expertService_title h3 {
+    color: #141B34;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 116%;
+    margin-bottom: 0;
+}
+
+.expertServic_card {
+    border-radius: 5px;
+    border: 1px solid #D3D3D3;
+    background: #FAFAFA;
+    padding: 20px 45px;
+    padding-bottom: 12px;
+}
+.expertServic_card > img {
+    width: 100%;
+    max-width: 100px;
+    display: block;
+    margin-bottom: 3px;
+}
+.expertServic_card > h4 {
+    color: #000;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 116%;
+    margin-bottom: 3px;
+}
+.expertServic_card > p {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 116%;
+    margin-bottom: 20px;
+}
+.expertServic_card > a {
+    width: 100%;
+    min-height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #56A77A;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 116%;
+    transition: 0.3s;
+}
+.expertServic_card > a:hover {
+    background-color: #141B34;
+    color: #fff;
+}
+
+
+
+/*
+==============================
+SERIVICE DEV PAFE START HERE 
+==============================
+*/
+.hero_content.service_dev > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 440px;
+    min-height: 78px;
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 10px;
+    background: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+.hero_content.service_dev > a:hover {
+    background-color: #5BB674;
+    color: #fff;
+}
+
+.devLang_area {
+    margin-top: 100px;
+}
+.devLang_content h2 {
+    color: #000;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.devLang_content h2 span {
+    color: #56A77A;
+}
+.devLang_content > img {
+    display: block;
+    width: 100%;
+    max-width: 505px;
+    margin: 0 auto;
+}
+
+
+.recentWork_area {
+    margin-top: 100px;
+}
+.recentWork_header h2 {
+    color: #000;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.recentWork_header p {
+    color: #515151;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 155%;
+    margin-bottom: 30px;
+}
+
+.recentWork_content > img {
+    width: 100%;
+    height: 555px;
+    object-fit: cover;
+    object-position: top;
+    transition: 1s;
+    cursor: pointer;
+}
+.recentWork_content > img:hover {
+    object-position: bottom;
+}
+
+.hero_area.serviceDev {
+    background: url(images/thumb14.png);
+    background-size: cover;
+}
+
+.serviceDevBlog_area {
+    margin-top: 100px;
+}
+.serviceDevBlog_content > h3 {
+    color: #000;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+.serviceDevBlog_content > p {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+}
+.serviceDevBlog_content > a {
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #161616;
+    width: 100%;
+    max-width: 440px;
+    min-height: 78px;
+    margin-top: 13px;
+}
+.serviceDevBlog_content > a:hover {
+    background: #56A77A;
+}
+.serviceDevBlog_thumb > img {
+    width: 100%;
+}
+.serviceDevBlog_area .mt_100 {
+    margin-top: 100px;
 }

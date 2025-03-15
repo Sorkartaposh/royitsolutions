@@ -349,9 +349,9 @@
 					<img class="robo_overlay wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="2s" src="images/thumb5.png" alt="">
 					<h2>“Unlock More With A Simple <br> Subscription”</h2>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
-					<form action="">
-						<input type="email" placeholder="Your email address">
-						<button type="button">Subscribe</button>
+					<form action="" method="post">
+						<input type="email" name="email" placeholder="Your email address">
+						<button type="submit" name="send">Subscribe</button>
 					</form>
 				</div>
 			</div>
@@ -393,9 +393,9 @@
 								<li><a href="#"><i class="fa-solid fa-phone"></i> +123 456 7890</a></li>
 								<li><a href="#"><i class="fa-solid fa-location-dot"></i> 123 Sherpur , Tech City</a></li>
 							</ul>
-							<form action="./contact.php" method="post">
-								<input type="email" placeholder="Email address..">
-								<button type="button">Submit</button>
+							<form action="" method="post">
+								<input type="email" name="email" placeholder="Email address.." required>
+								<button type="submit" name="send">Submit</button>
 							</form>
 						</div>
 					</div>
@@ -462,3 +462,53 @@
 		</script>
 	</body>
 </html>
+
+<?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Handling the subscription form from the footer
+    if (isset($_POST['send']) && isset($_POST['email'])) {
+        $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            die("Invalid email address!");
+        }
+
+        require './PHPMailer/Exception.php';
+        require './PHPMailer/PHPMailer.php';
+        require './PHPMailer/SMTP.php';
+
+        $mail = new PHPMailer(true);
+
+        try {
+            // SMTP Configuration
+            $mail->isSMTP();
+            $mail->Host       = 'smtp.gmail.com';
+            $mail->SMTPAuth   = true;
+            $mail->Username   = 'developertaposh@gmail.com'; // Your email
+            $mail->Password   = 'vfiovczltbyuacvh'; // Update with a new Gmail App Password
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+            $mail->Port       = 465;
+
+            // Email Headers
+            $mail->setFrom('developertaposh@gmail.com', 'Roy IT Solutions');
+            $mail->addAddress('robertfcoon@gmail.com'); // Your recipient email address
+
+            // Email Content
+            $mail->isHTML(true);
+            $mail->Subject = 'Subscription Request';
+            $mail->Body    = "<strong>Email:</strong> $email";
+
+            $mail->send();
+
+            // Success Message for Footer Form
+            echo '<h6 id="emailSend_msg"><div></div><span>Email has been sent successfully!</span> <i class="fa-solid fa-xmark"></i></h6>';
+        } catch (Exception $e) {
+            echo "Message could not be sent. Error: " . $mail->ErrorInfo;
+        }
+    }
+}
+?>

@@ -232,6 +232,87 @@ Small Screen - Tablate
 
 
 
+    .ourTeam_header_left {
+        width: 100%;
+        max-width: 414px;
+        border-radius: 15px;
+        background: #F4F4F4;
+        padding: 22px 35px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    .ourTeam_header_left > img {
+        max-width: 130px;
+        left: -50px;
+    }
+    .whoWeAre_right > img {
+        margin-top: 20px;
+    }
+    .ourTeam_header_right > p {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .teamMember_card .thumb > img {
+        height: 250px;
+    }
+    .teamMember_card .thumb > span {
+        font-size: 12px;
+        padding: 5px 8px;
+        position: absolute;
+        bottom: 8px;
+        right: 5px;
+        border-radius: 5px;
+    }
+
+    .teamMember_card .thumb {
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    .teamMemberIsoTop_wrapper .element-item {
+        border: 5px solid #fff;
+        width: 33.33%;
+    }
+    .teamMember_card {
+        border-radius: 10px;
+        border: 1px solid #DADADA;
+        background: #FAFAFA;
+        padding: 5px;
+    }
+    .teamMember_card .card_body > a {
+        min-height: 40px;
+        font-size: 16px;
+    }
+    .teamMember_card .card_body > h4 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .teamMember_card .card_body {
+        padding: 10px 5px;
+    }
+    .teamMember_card .card_body > p {
+        font-size: 14px;
+    }
+    .ourTeam_header_right > p {
+        font-size: 20px;
+    }
+    .customerSay_card_wrapper {
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+    }
+
+
+
+
+
+
+
+
+
 }
 
 /*
@@ -523,6 +604,85 @@ Small Screen - Mobile
     }
     .contactForm_row {
         border-radius: 20px;
+    }
+
+
+
+    .ourTeam_header_left {
+        width: 100%;
+        max-width: 414px;
+        border-radius: 15px;
+        background: #F4F4F4;
+        padding: 22px 35px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    .ourTeam_header_left > img {
+        max-width: 130px;
+        left: -50px;
+    }
+    .whoWeAre_right > img {
+        margin-top: 20px;
+    }
+    .ourTeam_header_right > p {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .teamMember_card .thumb > img {
+        height: 250px;
+    }
+    .teamMember_card .thumb > span {
+        font-size: 12px;
+        padding: 5px 8px;
+        position: absolute;
+        bottom: 8px;
+        right: 5px;
+        border-radius: 5px;
+    }
+
+    .teamMember_card .thumb {
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    .teamMemberIsoTop_wrapper .element-item {
+        border: 5px solid #fff;
+        width: 50%;
+    }
+    .teamMember_card {
+        border-radius: 10px;
+        border: 1px solid #DADADA;
+        background: #FAFAFA;
+        padding: 5px;
+    }
+    .teamMember_card .card_body > a {
+        min-height: 40px;
+        font-size: 16px;
+    }
+    .teamMember_card .card_body > h4 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .teamMember_card .card_body {
+        padding: 10px 5px;
+    }
+    .teamMember_card .card_body > p {
+        font-size: 14px;
+    }
+    .ourTeam_header_right > p {
+        font-size: 20px;
+    }
+    .customerSay_card_wrapper {
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+    }
+
+    .isoTopBtn_wrapper {
+        flex-wrap: wrap;
     }
 
 
@@ -1093,4 +1253,99 @@ Xtra Small Screen - Small Mobile
 
 
 
+
+
+    .ourTeam_header_left {
+        width: 100%;
+        max-width: 414px;
+        border-radius: 15px;
+        background: #F4F4F4;
+        padding: 22px 35px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    .ourTeam_header_left > img {
+        max-width: 100px;
+        left: -50px;
+    }
+    .whoWeAre_right > img {
+        margin-top: 20px;
+    }
+    .ourTeam_header_right > p {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .teamMember_card .thumb > img {
+        height: 230px;
+    }
+    .teamMember_card .thumb > span {
+        font-size: 10px;
+        padding: 5px 8px;
+        position: absolute;
+        bottom: 8px;
+        right: 5px;
+        border-radius: 5px;
+    }
+
+    .teamMember_card .thumb {
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    .teamMemberIsoTop_wrapper .element-item {
+        border: 5px solid #fff;
+        width: 50%;
+    }
+    .teamMember_card {
+        border-radius: 10px;
+        border: 1px solid #DADADA;
+        background: #FAFAFA;
+        padding: 5px;
+    }
+
+    .teamMember_card .card_body > a {
+        min-height: 35px;
+        font-size: 14px;
+    }
+    .teamMember_card .card_body > a i {
+        font-size: 12px;
+    }
+    .teamMember_card .card_body > h4 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .teamMember_card .card_body {
+        padding: 10px 5px;
+    }
+    .teamMember_card .card_body > p {
+        font-size: 12px;
+    }
+    .ourTeam_header_right > p {
+        font-size: 16px;
+    }
+    .customerSay_card_wrapper {
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+    }
+
+    .isoTopBtn_wrapper {
+        flex-wrap: wrap;
+    }
+    .isoTopBtn_wrapper > button {
+        font-size: 14px;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 420px) {
+    .teamMember_card .thumb > img {
+        height: 180px;
+      }
 }
